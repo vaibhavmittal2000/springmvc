@@ -14,7 +14,7 @@
     <!-- This is a statically entered name -->
     <h1>Name is: Vaibhav Mittal</h1>
     
-    <!-- This is a dynamically generated name -->
+    <!-- This is a dynamically generated Data -->
     <% 
       String name = (String) request.getAttribute("name");
       Integer id = (Integer) request.getAttribute("id");
