@@ -20,8 +20,9 @@
    
    <!-- Second Way using Model Attribute -->
    <h3>${Header}</h3>
-   
    <p>${Desc}</p>
+   
+   <hr>
    
    <h1>Hello, ${user.userName} </h1>
    
