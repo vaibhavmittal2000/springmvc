@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +15,22 @@
 </head>
 <body>
     <div class="container mt-5">
-    <h3 class="text-center">Registeration Form</h3>
-    <form action="/processform" method="post">
+    <h3 class="text-center">${Header}</h3>
+    <p class="text-center">${Desc}</p>
+    <form action="processform" method="post">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        <input type="email" class="form-control" id="exampleInputEmail1" name="userEmail" placeholder="Enter email">
       </div>
       
       <div class="mb-3">
         <label for="userName" class="form-label">User Name</label>
-        <input type="text" class="form-control" id="userName" placeholder="Enter username">
+        <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter username">
       </div>
       
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+        <input type="password" class="form-control" id="exampleInputPassword1" name="userPassword" placeholder="Enter password">
       </div>
       
       <div class="container text-center">
