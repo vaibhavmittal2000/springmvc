@@ -33,6 +33,9 @@ public class RegisterationController {
 	@RequestMapping(path = "/processform", method = RequestMethod.POST)
 	public String formHandler(@ModelAttribute User user,Model model) {
 		System.out.println(user);
+		if(user.getUserName().isBlank()) {
+			return "redirect:/form";
+		}
 		this.userService.createUser(user);
 		return "success";
 	}
